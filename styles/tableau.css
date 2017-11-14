@@ -1,0 +1,129 @@
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    background-color: #000;
+    background-image: url('http://hdw.datawallpaper.com/architecture/vintage-new-york-city-299988.jpg');
+    background-position: center;
+    background-size: cover;
+    -webkit-background-blend-mode: overlay;
+    -moz-background-blend-mode: overlay;
+    background-blend-mode: overlay;
+}
+.masthead {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+  text-align: center;
+  color: white;
+  background: url("../images/intro-bg.jpg") no-repeat bottom center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .masthead .intro-body {
+    display: table-cell;
+    vertical-align: middle; }
+    .masthead .intro-body .brand-heading {
+      font-size: 50px; }
+    .masthead .intro-body .intro-text {
+      font-size: 18px; }
+  @media (min-width: 768px) {
+    .masthead {
+      height: 100%;
+      padding: 0; }
+      .masthead .intro-body .brand-heading {
+        font-size: 100px; }
+      .masthead .intro-body .intro-text {
+        font-size: 22px; } }
+
+#navbar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #365FA9;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#navbar li {
+    position: relative;
+    float: left;
+    line-height: 60px;
+    background: inherit;
+    text-align: center;
+    transition: all .2s;
+}
+
+#navbar li a {
+    position: relative;
+    display: block;
+    padding: 0 20px;
+    line-height: inherit;
+    color: white;
+    text-decoration: none;
+}
+
+#navbar li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    width: 60px;
+    height: 60px;
+    background: #365FA9;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    transition: all 0, background .2s;
+}
+#navbar li:hover:before {
+    margin-top: 1px;
+    border-radius: 50% 50% 0 50%;
+    transition: all .1s, background .2s, margin-top .2s cubic-bezier(.5,30,.2,0);
+}
+#navbar li:hover,
+#navbar li:hover:before {
+    background: #9099a0;
+}
+#navbar li.active,
+#navbar li.active:before {
+    background: #9099a0;
+}
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  padding: 5px;
+  max-width: 200px;
+  max-height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+.image {
+    max-width: 400px;
+    max-height: 250px;
+}
